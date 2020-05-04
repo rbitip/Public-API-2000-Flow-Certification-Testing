@@ -12,9 +12,9 @@ library(EMSaov)
 ###################################################################################
 #  Read Pressure & Vacuum data                                                                     #
 ###################################################################################
-Press <- read_excel(here("FlowData.xlsx"), 
+Press <- read_excel(paste0(here(),"/FlowData.xlsx"), 
                     sheet = "API2000 Pressure", skip = 1)[,1:16]
-Vac   <- read_excel(here("FlowData.xlsx"), 
+Vac   <- read_excel(paste0(here(),"/FlowData.xlsx"), 
                     sheet = "API2000 Vacuum", skip = 1)[,1:16]
 PV <- rbind(Press,Vac)
   PV$diam.nom <- as.character(PV$diam.nom)
@@ -132,12 +132,12 @@ AOV <- function(mode)  {
        xaxt="n",ylim = ylim,main=paste0("Total Noise under ", mode),
        xlab="Nominal orifice diameter",
        ylab="Percent of Consensus Flow Rate")
-  # nominal psi tick marks
+  # nominal inwc tick marks
     axis(side=1,at=c(1,2,3),labels=c('2"','6"','10"'))
       axis(side=1,at=c(.85,.95,1.05,1.15),labels=c(NA,NA,NA,NA),tck=.02)
       axis(side=1,at=c(.85,.95,1.05,1.15)+1,labels=c(NA,NA,NA,NA),tck=.02)
       axis(side=1,at=c(.85,.95,1.05,1.15)+2,labels=c(NA,NA,NA,NA),tck=.02)
-    text(y=y.min+1,x=1.70,labels="psi:")
+    text(y=y.min+1,x=1.70,labels="inwc:")
     text(y=rep(y.min+1,3),x=c(.85,.95,1.05,1.15)+1,labels=c(2,3,4,5),cex=.8)
       
   
@@ -184,17 +184,17 @@ AOV <- function(mode)  {
     pch <- shapes[as.numeric(as.factor(data$vend))]
     x <- x + (as.numeric(factor(data$dp.nom))-2.5)/10
     v.bias <- round(vend.vs.con$percent,1)
-    plot(pure.error ~ x.jit,type="p",col=col,pch=pch,bg=col,
+    plot(pure.error ~ x,type="p",col=col,pch=pch,bg=col,
          xaxt="n",ylim = ylim,main=paste0("Pure error under ",mode),
          xlab="Nominal orifice diameter",
          ylab="Percent of Consensus Flow Rate")
     axis(side=1,at=c(1,2,3),labels=c('2"','6"','10"'))
-    # nominal psi tick marks
+    # nominal inwc tick marks
     axis(side=1,at=c(1,2,3),labels=c('2"','6"','10"'))
     axis(side=1,at=c(.85,.95,1.05,1.15),labels=c(NA,NA,NA,NA),tck=.02)
     axis(side=1,at=c(.85,.95,1.05,1.15)+1,labels=c(NA,NA,NA,NA),tck=.02)
     axis(side=1,at=c(.85,.95,1.05,1.15)+2,labels=c(NA,NA,NA,NA),tck=.02)
-    text(y=y.min+1,x=1.70,labels="psi:")
+    text(y=y.min+1,x=1.70,labels="inwc:")
     text(y=rep(y.min+1,3),x=c(.85,.95,1.05,1.15)+1,labels=c(2,3,4,5),cex=.8)
     
     axis(side=4,at=round(vend.vs.con$percent,1),las=2,tck=0)
