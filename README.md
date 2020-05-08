@@ -11,9 +11,9 @@ An overview of the report is given in the following video:
 If you don't know how to use git to clone repositories, you can access this repository with the following methods:
 
 * You can view the PDF in your browser by clicking "FlowCertTestingProgramFinalRpt_050820.pdf" in the list of files above.
-* You can download this entire repository by clicking the green "Clone or download" button and then selecting "Download zip" from the menu. ![clone button img]
+* You can download this entire repository by clicking the green "Clone or download" button and then selecting "Download zip" from the menu.
 
-(https://onedebos.files.wordpress.com/2019/07/images6088675361067318569.jpeg)
+![clone button img](https://onedebos.files.wordpress.com/2019/07/images6088675361067318569.jpeg)
 
 ## requirements
 
