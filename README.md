@@ -1,6 +1,6 @@
 # Public-API-2000-Flow-Certification-Testing
 
-Analysis of 6 manufacturers' pressure-vacuum flow certification protocols, detailed within the document "FlowCertTestingProgramFinalRpt_050820.pdf".
+Analysis of 6 manufacturers' pressure-vacuum flow certification protocols, detailed within the documents "API2000FlowCertTG_Rpt1of2.pdf" and "API2000FlowCertTG_Rpt2of2.pdf".
 
 An overview of the report (1 of 2) is given in the following video:
 
