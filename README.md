@@ -2,6 +2,11 @@
 
 Analysis of 6 manufacturers' pressure-vacuum flow certification protocols, detailed within the document "FlowCertTestingProgramFinalRpt_050820.pdf".
 
+The latest video presentation done at the API 2000 Virtual Conference on 10/14/20 is here:
+[![flow cert video](http://img.youtube.com/vi/qMuXS676pfA/0.jpg)](https://www.youtube.com/watch?v=f_E4dEviUrU)
+
+
+
 An overview of the report is given in the following video:
 
 [![flow cert video](http://img.youtube.com/vi/qMuXS676pfA/0.jpg)](http://www.youtube.com/watch?v=qMuXS676pfA)
